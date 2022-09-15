@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		What is Lorem&nbsp;&nbsp;&nbsp;&nbsp; Ipsum?<br>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
+		and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>
+	</div>
+	
+<!-- 
+	<pre> 태그는 미리 서식을 지정한 텍스트를 나타내며 html에 작성한 내용 그대로 표현한다.
+ -->
+
+
+ 
+	<pre>
+What is Lorem         Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</pre>
+	
+	<pre>
+package com.tjoeun.myCalendar;
+
+
+//  달력 작업에 필요한 메소드를 모아놓은 클래스
+public class MyCalendar {
+	
+	public static boolean isLeapyear(int year) {
+		return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+	}
+
+	public static int lastDay(int year, int month) {
+		int[] m = { 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		m[1] = isLeapyear(year) ? 29 : 28;
+		return m[month - 1];
+	}
+
+
+	public static int totalDay(int year, int month, int day) {
+
+		int sum = (year - 1) * 365 + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400;
+	
+		for (int i = 1; i < month; i++) {
+			sum += lastDay(year, i);
+		}
+
+		return sum + day;
+	}
+
+	public static int weekDay(int year, int month, int day) {
+		
+		return totalDay(year, month, day) % 7;
+	}
+}
+	
+	</pre>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
