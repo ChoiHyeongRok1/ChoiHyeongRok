@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/23_tableStyle.css">
+</head>
+<body>
+
+<!-- 
+	<caption> 태그는 표의 설명 또는 제목을 넣는다
+	<caption> 태그는 하나의 데이블에 하나의 <caption>만 사용한다.
+	<caption> 태그를 넣는 위치는 일반적으로 <table>태그 바로 아래에 넣지만 바로 아래가 아니라도 상관없다.
+ -->
+ 
+  	<table width="500">
+  		<caption>데이터 타입과 값</caption>
+ 		<tr align="center">
+ 			<!-- 
+ 				<th> 태그나 <td> 태그로 빈 셀을 만들면 브라우저에 따라서 표가 깨지는 경우가 발생할 수 있다.
+ 				빈 셀을 넣었을때 표가 깨진다면 &nbsp;를 넣어주면 깨지지 않고 잘 표현된다.
+ 			 -->
+ 			<th style="background-color: olive;">&nbsp;</th>
+ 			<td width="20%">type</td>
+ 			<td width="80%">method</td>
+ 		</tr>
+ 		<tr align="center">
+ 			<td align="center" width="15%">1</td>
+ 			<td width="25%">type</td>
+ 			<td width="60%">method</td>
+ 		</tr>
+ 		<tr align="center">
+ 			<td align="center" width="15%">1</td>
+ 			<td width="25%">type</td>
+ 			<td width="60%">method</td>
+ 		</tr>
+ 		
+ 	</table><br>
+ 	
+ 		<table width="500">
+  		<caption>데이터 타입과 값</caption>
+  		
+  		<!-- <col> 태그는 표의 열을 나타내며, 열에 속하는 셀들에 공통된 의미를 부여할 때 사용한다. -->
+  		<col /> <!-- 1열 -->
+  		<col style="background-color: olive;"/> <!-- 2열 -->
+  		<col/> <!-- 3열 -->
+  		
+ 		<tr align="center">
+ 			<!-- 
+ 				<th> 태그나 <td> 태그로 빈 셀을 만들면 브라우저에 따라서 표가 깨지는 경우가 발생할 수 있다.
+ 				빈 셀을 넣었을때 표가 깨진다면 &nbsp;를 넣어주면 깨지지 않고 잘 표현된다.
+ 			 -->
+ 			<th>&nbsp;</th>
+ 			<th width="20%">type</th>
+ 			<th width="80%">method</th>
+ 		</tr>
+ 		<tr align="center">
+ 			<td align="center" width="15%">1</td>
+ 			<td width="25%">type</td>
+ 			<td width="60%">method</td>
+ 		</tr>
+ 		<tr align="center">
+ 			<td align="center" width="15%">1</td>
+ 			<td width="25%">type</td>
+ 			<td width="60%">method</td>
+ 		</tr>
+ 		
+ 	</table><br>
+ 	
+ 		<table width="500">
+  		<caption>데이터 타입과 값</caption>
+  		
+  		<!-- <col> 태그는 표의 열을 나타내며, 열에 속하는 셀들에 공통된 의미를 부여할 때 사용한다. -->
+<!--   		<col/> 1열
+  		<col/> 2열
+  		<col/> 3열 -->
+  		
+  		<col style="background-color: olive" span="2">
+  		
+ 		<tr align="center">
+ 			<!-- 
+ 				<th> 태그나 <td> 태그로 빈 셀을 만들면 브라우저에 따라서 표가 깨지는 경우가 발생할 수 있다.
+ 				빈 셀을 넣었을때 표가 깨진다면 &nbsp;를 넣어주면 깨지지 않고 잘 표현된다.
+ 			 -->
+ 			<th>&nbsp;</th>
+ 			<th align="center">type</th>
+ 			<th>method</th>
+ 		</tr>
+ 		<tr align="center">
+ 			<td>1</td>
+ 			<td align="center">type</td>
+ 			<td>method</td>
+ 		</tr>
+ 		<tr align="center">
+ 			<td>2</td>
+ 			<td align="center">type</td>
+ 			<td>method</td>
+ 		</tr>
+ 		
+ 	</table>
+ 
+</body>
+</html>
