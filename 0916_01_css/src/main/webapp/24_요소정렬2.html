@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	
+	/* 
+		float 해제
+		float 속성이 적용된 요소의 주위로 다른 요소들이 흐르게 되는데 이를 방지하기 위해
+		1. 형제 요소에 clear: left;, clear: right;, clear: both;를 추가해서 해제한다.
+			clear: both;는 right, left를 구분하지 않고 무조건 float을 해제한다.
+		2. 부모 요소에 overflow: hidden;, overflow: auto; 를 추가해서 해제한다.
+		3. 부모 요소에 가상 요소 선택자 "::after"를 이용해 content를 추가해서 해제한다.
+	 */
+	
+	.box1 {
+		width: 150px;
+		height: 100px;
+		background-color: darkturquoise;
+		font-size: 30px;
+		color: blue;
+		margin: 10px;
+		
+	 	float: left;
+	}
+	
+	.box2 {
+		width: 150px;
+		height: 100px;
+		background-color: lightcoral;
+		font-size: 30px;
+		color: red;
+		margin: 10px;
+		
+	 	clear: both;
+	}
+	
+	.box3 {
+		width: 150px;
+		height: 100px;
+		background-color: cyan;
+		font-size: 30px;
+		color: blue;
+		margin: 10px;
+		
+	 	float: right;
+	}
+	
+	.box4 {
+		width: 150px;
+		height: 100px;
+		background-color: aquamarine;
+		font-size: 30px;
+		color: green;
+		margin: 10px;
+		
+	 	clear: both;
+	}
+	
+	.float-box {
+		width: 150px;
+		height: 100px;
+		background-color: lemonchiffon;
+		font-size: 30px;
+		color: goldenrod;
+		margin: 10px;
+		
+	 	float: left;
+	}
+	
+	.new-box {
+		width: 700px;
+		height: 30px;
+		background-color: coral;
+	}
+	
+	/* clearfix는 float-box의 부모 */
+	.clearfix {
+		overflow: auto;
+	}
+	
+	.float-box1 {
+		width: 150px;
+		height: 100px;
+		background-color: gainsboro;
+		font-size: 30px;
+		color: black;
+		margin: 10px;
+		
+	 	float: left;
+	}
+	
+	.new-box1 {
+		width: 700px;
+		height: 30px;
+		background-color: dimgrey;
+	}
+	
+	/* clearfix는 float-box의 부모 */
+	.clearfix1 {
+		overflow: auto;
+	}
+	
+	.float-box2 {
+		width: 150px;
+		height: 100px;
+		background-color: aquamarine;
+		font-size: 30px;
+		color: cadetblue;
+		margin: 10px;
+		
+	 	float: left;
+	}
+	
+	.new-box2 {
+		width: 700px;
+		height: 30px;
+		background-color: darkolivegreen;
+	}
+	
+	/* clearfix는 float-box의 부모 */
+	.clearfix2::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+	
+</style>
+
+</head>
+<body>
+	
+	<div class="box1">1</div>
+	<div class="box1">2</div>
+	<div class="box1">3</div>
+	<div class="box2">4</div><hr/>
+	
+	<div class="box3">1</div>
+	<div class="box3">2</div>
+	<div class="box3">3</div>
+	<div class="box4">4</div><hr/>
+	
+	<div class="clearfix">
+		<div class="float-box">1</div>
+		<div class="float-box">2</div>
+		<div class="float-box">3</div>
+		<div class="float-box">4</div>
+	</div>
+	<div class="new-box"></div><hr/> <!-- 형제의 자식과의 float 속성 해제 -->
+	
+	<div class="clearfix1">
+		<div class="float-box1">1</div>
+		<div class="float-box1">2</div>
+		<div class="float-box1">3</div>
+		<div class="float-box1">4</div>
+	</div>
+	
+	<div class="new-box1"></div>
+	<div class="clearfix2">
+		<div class="float-box2">1</div>
+		<div class="float-box2">2</div>
+		<div class="float-box2">3</div>
+		<div class="float-box2">4</div>
+	</div>
+	<div class="new-box2"></div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
