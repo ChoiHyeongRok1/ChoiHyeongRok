@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>부트스트랩 웹 페이지</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./images/logo.png">
+<link rel="stylesheet" href= "./css/bootstrap.css">
+
+<style type="text/css">
+	
+	.jumbotron {
+		background-image: url(./images/jumbotronBackground.jpg);
+		background-size: cover;
+		color: white;
+		text-shadow: 0.2em 0.2em 0.2em black;
+	}
+	
+</style>
+
+<script type="text/javascript" src="./js/jquery-3.6.1.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+	
+<header>
+	<nav class="container navbar navbar-inverse">
+		<div class="container-fluid">
+			<!-- 네비게이션 헤더 -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">날먹코딩</a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<div class="collapse navbar-collapse" id="nav-toggle">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">소개</a>
+						</li>
+						<li class="active">
+							<a href="#">ss</a>
+						</li>
+						<li class="active">
+							<a href="#">aa</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								강의<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">c++</a></li>
+								<li><a href="#">java</a></li>
+								<li><a href="#">android</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="검색할 내용을 입력하세요">
+						</div>
+						<button type="button" class="btn btn-primary">검색</button>
+					</form>
+					<div class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							접속하기<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">로그인</a><li>
+								<li><a href="#">회원가입</a><li>
+							</ul>
+						</li>
+					</div>
+					
+				</div>
+				
+			</div>	
+	</nav>
+	</header>
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">점보트론</h1>
+			<p class="text-center">
+				배고프다
+			</p>
+			<p class="text-center">
+				<a class="btn btn-info" href="#">강의 듣기</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4" style="text-align: center;">
+			<h4>날로먹는 코딩</h4>
+			<p>날로 먹는 코딩은 다른사이트라 123532415746314547</p>
+			<p>
+				<a href="#" class="btn btn-success" data-target="#modal" data-toggle="modal">자세히 알아보기</a>
+			</p>
+		</div>
+		
+		<div class="col-md-4" style="text-align: center;">
+			<h4>날로trwt436ttygewr</h4>
+			<p>날로 먹는 코딩은 다른사254728738756875287365874654347</p>
+			<p>
+				<a href="#" class="btn btn-danger" data-target="#modal2" data-toggle="modal">자세히 알아보기</a>
+			</p>
+		</div>
+		<div class="col-md-4" style="text-align: center;">
+			<h4>날greqhetrhwtrtawsgdsa</h4>
+			<p>날로dfcsafgdsa다른사254728738756875287365874654347</p>
+			<p>
+				<a href="#" class="btn btn-primary" data-target="#modal3" data-toggle="modal">자세히 알아보기</a>
+			</p>
+		</div>
+		
+	</div>
+	
+	
+	<!-- 
+		풋터
+		풋터는 홈페이지의 기타정보를 보여주는 역할을 하는 일반적으로 홈페이지 가장 아래쪽에 위치한 저작권, 개발자
+		네비게이션 능을 포함한다.
+	-->
+	
+	<!--  
+	  row 클래스는 12개의 공간으로 나눈 다음 col-sm의 숫자 만큼의 크기를 표시 영역의 크기로 사용한다.
+         => 숫자의 합이 12를 넘어가면 안된다.
+      열(.col-*-*)의 구성 => https://poiemaweb.com/bootstrap-grid-system 참조
+      열은 행(.row) 내부에 배치해야 하고 .col-*-* 형태의 class로 열을 배치하는데 
+      첫 번째 "*"에는 xs, sm, md, lg 중 하나를 지정하고 두 번째 "*"에는 사용할 숫자를 쓴다.
+      ==================================================================================================================================
+                    Extra small devices   Small devices Tablets    Medium devices Desktops    Large devices Desktops
+                     Phones(0 ~ 767px)      (768 ~ 991px)            (992 ~ 1199px)               (1200px ~)
+      ==================================================================================================================================
+      Grid behavior     항상 수평 적용   viewport 너비가 breakpoint 이상이면 수평 적용, 미만이면 stack
+      Container width    None(auto)           750px                   970px                 1170px
+      Class prefix       .col-xs-            .col-sm-               .col-md-               .col-lg-
+      ==================================================================================================================================
+	-->
+	
+	<footer>
+		<div style="background-color: #1E1E1E; color: white;" class="container">
+		
+			<div class="row">
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>Copyright &copy;</h5>
+					<h5>홍길동(Hong gil dong)</h5>
+				</div>
+				
+				<!-- 4 -->
+				
+				<div class="col-sm-4" style="text-align: center;">
+					<h5>Copyright &copy;</h5>
+					<h5>홍길동(Hong gil dong)홍길동(Hong gil dong)홍길동(Hong gil dong)홍길동(Hong gil dong)</h5>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>네비게이션</h5>
+					<div class="list-group">
+						<a href="#" class="list-group-item">1</a>
+						<a href="#" class="list-group-item">2</a>
+						<a href="#" class="list-group-item">3</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>SNS</h5>
+					<div class="list-group">
+						<a href="#" class="list-group-item">4</a>
+						<a href="#" class="list-group-item">5</a>
+						<a href="#" class="list-group-item">6</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>
+						<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;by 홍길동			
+					</h5>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- 
+			모달(modal content)
+			모달은 부트스트랩에서 자주 사용하는 컴포넌트로 팝업창을 의미한다.
+			상세 정보를 보여주는 페이지나 로그인 및 회원가입이 팝업창에서 이루어지도록 할 때 모달 컴포넌트를 사용한다.
+		 -->
+		 
+		 <!-- 모달 팝업으로 표시할 내용 -->
+		 <div class="modal" id="modal">
+		 	<div class="modal-dialog">
+		 		<div class="modal-content">
+		 			<div class="modal-header">
+		 				fdsafdsa
+		 				<button class="close" data-dismiss="modal">&times;</button>
+		 			</div>
+		 			<div class="modal-body" style="text-align: center;">
+		 				4186541561465f41dsa64fsa86saf46a8514g146fda5g14a61dsfvd5s1fg56a1g4a6v13cx
+		 				hgdfsh4dfs6h4dsfh4tsrh4s6b4fds3
+		 				5b44bhtgs6
+		 				4bgfdsv1g4d5s6g4re58641fds5g1465esa4afew
+		 				<img src="./images/youtube2.jpg" style="width: 200px;">
+		 			</div>
+		 		</div>
+		 	</div>
+		 	
+		 </div>
+		 
+		 
+		 <div class="modal" id="modal2">
+		 	<div class="modal-dialog">
+		 		<div class="modal-content">
+		 			<div class="modal-header">
+		 				fdsafdsa
+		 				<button class="close" data-dismiss="modal">&times;</button>
+		 			</div>
+		 			<div class="modal-body" style="text-align: center;">
+		 				4186541561465f41dsa64fsa86saf46a8514g146fda5g14a61dsfvd5s1fg56a1g4a6v13cx
+		 				hgdfsh4dfs6h4dsfh4tsrh4s6b4fds3
+		 				5b44bhtgs6
+		 				4bgfdsv1g4d5s6g4re58641fds5g1465esa4afew
+		 				<img src="./images/android.png" style="width: 200px;">
+		 			</div>
+		 		</div>
+		 	</div>
+		 	
+		 </div>
+		 
+		 <div class="modal" id="modal3">
+		 	<div class="modal-dialog">
+		 		<div class="modal-content">
+		 			<div class="modal-header">
+		 				fdsafdsa
+		 				<button class="close" data-dismiss="modal">&times;</button>
+		 			</div>
+		 			<div class="modal-body" style="text-align: center;">
+		 				4186541561465f41dsa64fsa86saf46a8514g146fda5g14a61dsfvd5s1fg56a1g4a6v13cx
+		 				hgdfsh4dfs6h4dsfh4tsrh4s6b4fds3
+		 				5b44bhtgs6
+		 				4bgfdsv1g4d5s6g4re58641fds5g1465esa4afew
+		 				<img src="./images/java.png" style="width: 200px;">
+		 			</div>
+		 		</div>
+		 	</div>
+		 	
+		 </div>
+		 
+	</footer>
+		
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
