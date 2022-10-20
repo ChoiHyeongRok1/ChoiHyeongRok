@@ -1,0 +1,75 @@
+	.table:nth-child(2n){
+		background-color: ivory;
+	}
+	.table:nth-child(2n+1){
+		background-color: pink;
+	}
+	.button {
+	  background-color: white; /* Green */
+	  border: 2px solid #4CAF50;
+	  color: black;
+	  padding: 5px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 14px;
+	  margin: 2px 0px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	  border-radius: 20%;
+	}
+	
+	.button:hover {
+	  background-color: #4CAF50;
+	  border-radius: 20%;
+	  color: white;
+	}
+	
+	.button2 {
+	  background-color: lightgray;
+	  border: 2px solid black;
+	  border-radius: 20%;
+	  color: black;
+	}
+	
+	.button2:hover {
+	  background-color: lightgray;
+	  border: 2px solid black;
+	  border-radius: 20%;
+	  color: black;
+	  cursor: not-allowed;
+	}
+	
+	span {
+		color: red;
+		font-weight: bold;
+		background-color: yellow;
+		
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
