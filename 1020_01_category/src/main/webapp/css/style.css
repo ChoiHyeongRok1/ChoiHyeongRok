@@ -1,0 +1,19 @@
+a {
+  color: green;
+  text-decoration: none;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+}
