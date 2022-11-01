@@ -1,0 +1,55 @@
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:visited{
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+.button {
+	  background-color: white; /* Green */
+	  border: 2px solid #4CAF50;
+	  color: black;
+	  padding: 5px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 14px;
+	  margin: 2px 0px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	  border-radius: 20%;
+	}
+	
+	.button:hover {
+	  background-color: #4CAF50;
+	  border-radius: 20%;
+	  color: white;
+	}
+	
+	.button2 {
+	  background-color: lightgray;
+	  border: 2px solid black;
+	  border-radius: 20%;
+	  color: black;
+	}
+	
+	.button2:hover {
+	  background-color: lightgray;
+	  border: 2px solid black;
+	  border-radius: 20%;
+	  color: black;
+	  cursor: not-allowed;
+	}
